@@ -23,7 +23,8 @@ class m210922_091934_create_book_table extends Migration
             'book',
             'author_id',
             'author',
-            'id'
+            'id',
+            'CASCADE'
         );
     }
 
