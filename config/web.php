@@ -47,6 +47,10 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'GET api/v1/books/list' => 'api/v1/book/list',
+                'GET api/v1/books/<id>' => 'api/v1/book/view',
+                'POST api/v1/books/<id>' => 'api/v1/book/update',
+                'DELETE api/v1/books/<id>' => 'api/v1/book/delete',
             ],
         ],
         'authManager' => [
